@@ -1,0 +1,24 @@
+This is a plain text file.
+
+doctest: Setup
+>> require './hello'
+
+You can write volumes of information here.
+
+By the way, this is how the hello method works by default.
+
+doctest: hello returns "Hello World!"
+>> hello
+=> "Hello World!"
+
+You can also ask for someone by name.
+
+doctest: I can greet someone by name
+>> hello 'Andrew'
+=> "Hello Andrew!"
+
+If you hear a bump in the night you might use it this way.
+
+doctest: I can ask if someone is there.
+>> hello('Victor', '?')
+=> "Hello Victor?"
