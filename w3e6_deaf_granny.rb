@@ -12,15 +12,15 @@ end
 def grandma_responds( input, name='SONNY' )
   shout, bye = input == input.upcase, input === 'BYE'
   if input.length < 1
-    puts "Enter some text so grandma can respond!"
+    print "Enter some text so grandma can respond!\n"
     grandma_responds(gets.chomp,name)
   elsif bye
-    puts "BYE #{name}!"
+    print "BYE #{name}!\n"
   elsif shout
-    puts  "NO #{name}, NOT SINCE #{rand_year}"
+    print "NO #{name}, NOT SINCE #{rand_year}\n"
     grandma_responds(gets.chomp,name)
   else
-    puts "HUH?! SPEAK UP, #{name}!"
+    print "HUH?! SPEAK UP, #{name}!\n"
     grandma_responds(gets.chomp,name)
   end
 end
