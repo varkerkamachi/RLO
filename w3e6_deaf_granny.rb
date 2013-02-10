@@ -1,6 +1,6 @@
 def intro
-  print "what's your name?\n"
-  greet_grandma(gets.chomp)
+  print "what's your name? :>"
+  @sonny = greet_grandma(gets.chomp)
 end
 def greet_grandma( name='Sonny' )
   print "say hi to grandma, #{name}\r\n"
