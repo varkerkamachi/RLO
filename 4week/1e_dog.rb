@@ -19,36 +19,35 @@ doctest: Buffy should be able to bark freely
 =end
 class Dog
   attr_accessor :name
- 
+
   def initialize( name )
     @name = name
   end
-  
+
   def bark
     "woof, woof, woof!"
   end
-  
+
   def eat
     "nom nom nom"
   end
-  
+
   def chase_cat
     "I'm running after that darned cat! Rruff rruff!"
   end
-  
+
   def method_missing( m )
     puts "There's no method #{m} available. Try something else"
   end
-  
+
   def inside
     @inside = !@inside # !> instance variable @inside not initialized
   end
   def inside?
     @inside
   end
-  
   # doctest: teach trick
-  # >> my_dog.teach_trick(:dance) {"Dances"}
+  # >> my_dog.teach_trick('dance') {'Dances'}
   # >> my_dog.dance
   # => 'Dances'
   def teach_trick(trick, &blk)
