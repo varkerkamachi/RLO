@@ -1,34 +1,3 @@
-class Dog
-  attr_accessor :name
- 
-  def initialize( name )
-    @name = name
-  end
-  
-  def bark
-    puts "woof, woof woof!"
-  end
-  
-  def eat
-    puts "nom nom nom"
-  end
-  
-  def chase_cat
-    puts "I'm running after that darned cat! Rruff rruff!"
-  end
-  
-  def method_missing( m )
-    puts "There's no method #{m} available. Try something else"
-  end
-  
-  def inside
-    @inside = !@inside
-  end
-  def inside?
-    @inside
-  end
-end
-
 =begin
 doctest: get my new puppy
 >> my_dog = Dog.new('Buffy')
@@ -48,6 +17,44 @@ doctest: Buffy should be able to bark freely
 >> my_dog.bark
 => 'woof, woof, woof!'
 =end
+class Dog
+  attr_accessor :name
+ 
+  def initialize( name )
+    @name = name
+  end
+  
+  def bark
+    "woof, woof, woof!"
+  end
+  
+  def eat
+    "nom nom nom"
+  end
+  
+  def chase_cat
+    "I'm running after that darned cat! Rruff rruff!"
+  end
+  
+  def method_missing( m )
+    puts "There's no method #{m} available. Try something else"
+  end
+  
+  def inside
+    @inside = !@inside
+  end
+  def inside?
+    @inside
+  end
+ # doctest: teach trick
+  # >> my_dog.teach_trick('dance') {'Dances'}
+  # >> my_dog.dance
+  # => 'Dances'
+  def teach_trick(trick, &blk)
+    define_singleton_method(trick, blk)
+  end
+end
+
 
 begin
   buffy = Dog.new('Buffy')
