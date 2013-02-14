@@ -8,6 +8,14 @@ doctest: find perimeter
 doctest: find area
 >> r.area
 => 32
+doctest: Checking for non-integer results
+>> r = Rectangle.new(2.5, 3.5)
+doctest: perimeter
+>> r.perimeter
+=> 12.0
+doctest: area
+>> r.area
+=> 8.75
 =end
 
 class Rectangle
