@@ -7,27 +7,11 @@
 # If you shout BYEBYEBYE or BYE BYE BYE, grandma should pretend not to hear you (and not count it as a BYE).
 
 =begin
-doctest: start a new conversation
+doctest: Setup Granny
 >> g = Granny.new
-=> g
-doctest: counter starts at 0
->> g.counter
-=> 0
-doctest: counter increases by one
->> g.edit_counter('+')
-=> 1
-doctest: counter decreases by one
->> g.edit_counter('-')
-=> 0
->> g.edit_counter('+')
-doctest: we can return the size of the counter
->> g.get_counter
-=> 1
->> g.edit_counter
-doctest: we can return the size of the counter
->> g.get_counter
-=> 1
-
+doctest: Granny responds to HELLO
+>> g.answers("HELLO").include?('NOT SINCE')
+=> true
 =end
 
 class Granny
@@ -35,7 +19,6 @@ class Granny
   def initialize
     @counter = 0
     puts "Hi, you're about to talk to your deaf grandma. \r\nIf you get frustrated and want to leave, you must shout BYE three separate and consecutive times.\r\nHave fun talking to granny!"
-    greet_grandma
   end
   
   def greet_grandma
@@ -48,21 +31,14 @@ class Granny
     rand(1930..1950)
   end
 
-  def grandma_responds( input )
-    input === 'BYE' ? respond_to_bye : grandma_answers(input)
-  end
-
-  def grandma_answers( input )
+  def answers( input )
     if input.length < 1
-      puts "Enter some text so grandma can respond!"
+      "Enter some text so grandma can respond!"
     elsif input == input.upcase
-      puts "NO, NOT SINCE #{rand_year}"
+      "NO, NOT SINCE #{rand_year}"
     else
-      puts "HUH?! SPEAK UP, Sonny!"
+      "HUH?! SPEAK UP, Sonny!"
     end
-    edit_counter('-')
-    show_prompt
-    grandma_responds(gets.chomp)
   end
   
   def respond_to_bye
@@ -102,9 +78,9 @@ class Granny
 
 end # end class
 
-g = Granny.new
+if __FILE__ == $0
+  g = Granny.new
 
+end
 # puts g.counter.length
-
-
 
