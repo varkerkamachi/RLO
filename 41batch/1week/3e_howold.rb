@@ -16,7 +16,7 @@ def calculate_age( age )
 end
 
 def format_age( age )
-  sprintf("%.02f" % age)
+  sprintf("%.02f" % age).to_f
 end
 
 puts format_age( calculate_age(979000000) )
