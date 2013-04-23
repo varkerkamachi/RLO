@@ -10,7 +10,7 @@ def write_contents_to_file( f, text )
   end
 end
 def replace_file_contents( f, str, replacement )
-  c = get_file_contents( f ).split('\n').each {|line| replace_contents(line, str, replacement)}
+  c = get_file_contents( f ).split('\n').each {|line| replace_contents(line, /\b(#{str})\b/, replacement)}
   write_contents_to_file( f, c )
 end
 replace_file_contents( 'word.txt', 'word', 'inserted word' )
@@ -26,4 +26,4 @@ def recreate_initial_file( file, og_file )
 end
 
 
-puts recreate_initial_file( 'reset.txt', 'word.txt' )
+#puts recreate_initial_file( 'reset.txt', 'word.txt' )
