@@ -54,4 +54,4 @@ def get_heading( heading = '' )
   heading.empty? ? nil : "\n" + heading + "\n"
 end
 
-puts multiplication_table( 9, heading = 'Heading', decorate = false )
+puts multiplication_table( 8, heading = '***Jennifer***', decorate = true )
