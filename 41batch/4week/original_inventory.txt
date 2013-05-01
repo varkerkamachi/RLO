@@ -1,0 +1,73 @@
+#1week
+ --1week/1c_years_and_months.rb
+ --1week/2c_convert.rb
+ --1week/4e_minutes_in_a_year.rb
+ --1week/5e_value_of_a_variable.rb
+#2week
+ --2week/2c_logic.rb
+ --2week/3e_leap_year.rb
+ --2week/word.txt
+#3week
+ --3week/10_sum_of_elements.rb
+ --3week/12e_quiz_attempts.rb
+ --3week/2e_inserted_word.rb
+ --3week/6e_deaf_granny.rb
+#41batch
+#41batch/1week
+ --41batch/1week/1c_age.rb
+ --41batch/1week/1c_convert.rb
+ --41batch/1week/1e_guess.rb
+ --41batch/1week/2e_sprintf.rb
+ --41batch/1week/3c_formatting.rb
+ --41batch/1week/3e_howold.rb
+ --41batch/1week/4e_minutesinyear.rb
+ --41batch/1week/5e_variable.rb
+ --41batch/1week/6e_convert.rb
+#41batch/2week
+ --41batch/2week/1c_prompt.rb
+ --41batch/2week/3c_split_string.rb
+#41batch/3week
+ --41batch/3week/10e_sum_array.rb
+ --41batch/3week/11e_odd_even.rb
+ --41batch/3week/12e_quiz_yes_or_no.rb
+ --41batch/3week/13e_dry.rb
+ --41batch/3week/16e_sort.rb
+ --41batch/3week/2e_inserted_word.rb
+ --41batch/3week/5e_split_string.rb
+ --41batch/3week/8e_fizzbuzz.rb
+ --41batch/3week/9e_reverse.rb
+ --41batch/3week/word.txt
+#41batch/4week
+ --41batch/4week/1ae_dog_tricks.rb
+ --41batch/4week/1e_dog.rb
+ --41batch/4week/2e_rectangle.rb
+ --41batch/4week/5e_inventory.rb
+ --41batch/4week/original_inventory.txt
+#41batch/4week/test_dir
+ --41batch/4week/test_dir/test_file.rb
+#4week
+ --4week/1e_dog.rb
+ --4week/2e_rectangle.rb
+ --4week/3e_granny.rb
+ --README.md
+ --convert.rb
+#doctest
+ --doctest/hello.doctest
+ --doctest/hello.rb
+ --doctest/reverse_word.rb
+ --fizzbuzz.rb
+#old_batch
+#old_batch/RLO
+#old_batch/RLO/3week
+ --old_batch/RLO/3week/e9_reverse.rb
+#old_batch/RLO/4week
+ --old_batch/RLO/4week/deaf_granny_2.rb
+ --old_batch/RLO/4week/dog.rb
+ --old_batch/RLO/4week/p026zdeafgm2.rb
+ --old_batch/RLO/4week/p028swapcontents.rb
+ --old_batch/RLO/4week/rectangle.rb
+ --old_batch/RLO/4week/reworked_granny.rb
+ --test.txt
+#tester
+ --text.txt
+ --value_of_a_variable.rb
