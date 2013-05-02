@@ -31,30 +31,18 @@
 # and will tell a certain dog to perform a trick it hasn't learned yet...
 
 class Dog
-  attr_accessor :name
-  def initialize( name = nil )
+  attr_accessor :name, :poo
+  def initialize( name = 'mutt' )
     @name = name
     @trickstate = []
   end
   
-  def teach_trick trick
+  def teach_trick &trick
     #passing in a proc..?
-    #@trickstate[] = trick
-    trick.call(self.name)
+    trick.call
   end
   
-  # def poo
-  #   "#{@name} is a smelly doggy!"
-  # end
-  
-  def dance
-    if( @trickstate.include? method(name))
-      puts "#{@name} is dancing!"
-    else
-      puts "#{@name} doesn't know how to dance!"
-    end
-  end
-  poo = lambda { |n| "#{n} is a smelly doggy!" }
+  poo = lambda { |n| puts "#{n} is a smelly doggy!" }
   # :laugh = lambda { "#{@name} finds this hilarious!" }
   #private @trickstate
 end
@@ -64,5 +52,4 @@ d = Dog.new('ralphie')
 puts d.name
 #puts d.dance
 # puts d.dance
-d.teach_trick(:poo)
-puts d.poo
+#d.teach_trick( :poo )

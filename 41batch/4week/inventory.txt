@@ -1,0 +1,34 @@
+1week
+  1week/1c_age.rb
+  1week/1c_convert.rb
+  1week/1e_guess.rb
+  1week/2e_sprintf.rb
+  1week/3c_formatting.rb
+  1week/3e_howold.rb
+  1week/4e_minutesinyear.rb
+  1week/5e_variable.rb
+  1week/6e_convert.rb
+2week
+  2week/1c_prompt.rb
+  2week/3c_split_string.rb
+3week
+  3week/10e_sum_array.rb
+  3week/11e_odd_even.rb
+  3week/12e_quiz_yes_or_no.rb
+  3week/13e_dry.rb
+  3week/16e_sort.rb
+  3week/2e_inserted_word.rb
+  3week/5e_split_string.rb
+  3week/8e_fizzbuzz.rb
+  3week/9e_reverse.rb
+  3week/word.txt
+4week
+  4week/1ae_dog_tricks.rb
+  4week/1e_dog.rb
+  4week/2e_rectangle.rb
+  4week/5e_inventory.rb
+  4week/5e_update_inventory.rb
+  4week/inventory.txt
+4week/test
+  4week/test/test.txt
+  inventory.txt

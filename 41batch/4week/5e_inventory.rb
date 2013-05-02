@@ -12,4 +12,23 @@
 # Now, write another Ruby script that displays on the screen all the files that have been added in this folder 
 # # since the time the old-inventory.txt was created.
 
-Dir.glob('**/*').sort.each{ |x| puts File.directory?(x) ? "##{x}\r\n" : " --#{x}\r\n" }
+
+#write contents to a file... 
+# depends on where this is called as to how deep it recurses and therefore how many entries are in the resulting inventory
+# not sure how to do this yet - wanted to use argv and capture the name of the file for storage
+# def check_inventory( file_arg )
+  # if Dir.entries.include? file_arg
+  #   update_inventory file_arg
+  # else
+  #   write_inventory file_arg
+  # end
+# end
+# puts check_inventory ARGV[0]
+
+
+Dir.glob('**/*').sort.each{ |x| puts File.directory?(x) ? "#{x}\r\n" : "  #{x}\r\n" }
+
+#File.mtime
+
+
+

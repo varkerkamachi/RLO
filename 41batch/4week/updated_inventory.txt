@@ -1,0 +1,7 @@
+Removed or missing files:
+4week/test
+4week/test/test.txt
+
+New or added files:
+"4week/new_file.txt"
+"4week/updated_inventory.txt"

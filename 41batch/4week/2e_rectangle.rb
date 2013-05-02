@@ -6,7 +6,7 @@
 # 
 
 class Rectangle
-  attr_accessor :area, :perimeter
+  attr_reader :area, :perimeter
   def initialize( length, width )
     @area = length*width
     @perimeter = length*2 + width*2
